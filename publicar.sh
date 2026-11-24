@@ -28,4 +28,12 @@ gh release create "v$VERSION" \
   --latest
 
 rm -rf "$TMP"
+
+# La página muestra la última versión publicada (y la guía nueva, si cambió).
+FECHA="$(date '+%d/%m/%Y')"
+perl -0pi -e "s#<!-- version -->.*?<!-- /version -->#<!-- version -->\n<p align=\"center\"><strong>Última versión: $VERSION</strong> · publicada el $FECHA</p>\n<!-- /version -->#s" "$AQUI/README.md"
+git -C "$AQUI" add README.md Guia-TuVendor-Call.pdf publicar.sh
+git -C "$AQUI" commit -q -m "Versión $VERSION" || true
+git -C "$AQUI" push -q origin main
+
 echo "Listo: https://github.com/dayronpf/tuvendor-call-descargas"
