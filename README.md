@@ -7,7 +7,7 @@
 <p align="center">La app de ventas de TuVendor para Android: chats de WhatsApp, tareas y llamadas cronometradas.</p>
 
 <!-- version -->
-<p align="center"><strong>Última versión: 1.4.0</strong> · publicada el 24/11/2026</p>
+<p align="center"><strong>Última versión: 1.5.0</strong> · publicada el 24/11/2026</p>
 <!-- /version -->
 
 <p align="center">Compare con la versión que sale en la app (portada, «Hoy» o Ajustes). Si la suya es menor, descargue e instale la nueva encima: no pierde nada.</p>
